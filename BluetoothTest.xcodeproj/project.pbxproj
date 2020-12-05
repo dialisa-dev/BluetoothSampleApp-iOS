@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		2D4EDCAD24FED26800F67C4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D4EDCAB24FED26800F67C4A /* LaunchScreen.storyboard */; };
 		2D4EDCB824FED26800F67C4A /* BluetoothTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4EDCB724FED26800F67C4A /* BluetoothTestTests.swift */; };
 		2D4EDCC324FED26800F67C4A /* BluetoothTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4EDCC224FED26800F67C4A /* BluetoothTestUITests.swift */; };
+		2DBAF79B257B03FA002950C1 /* DanaviBluetoothManager in Frameworks */ = {isa = PBXBuildFile; productRef = 2DBAF79A257B03FA002950C1 /* DanaviBluetoothManager */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,19 @@
 			remoteInfo = BluetoothTest;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2D4EDCF024FF00F100F67C4A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2D4EDC9D24FED26700F67C4A /* BluetoothTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluetoothTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DBAF79B257B03FA002950C1 /* DanaviBluetoothManager in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,7 @@
 				2D4EDCB624FED26800F67C4A /* BluetoothTestTests */,
 				2D4EDCC124FED26800F67C4A /* BluetoothTestUITests */,
 				2D4EDC9E24FED26700F67C4A /* Products */,
+				2D4EDCD024FED31B00F67C4A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +144,13 @@
 			path = BluetoothTestUITests;
 			sourceTree = "<group>";
 		};
+		2D4EDCD024FED31B00F67C4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,12 +161,16 @@
 				2D4EDC9924FED26700F67C4A /* Sources */,
 				2D4EDC9A24FED26700F67C4A /* Frameworks */,
 				2D4EDC9B24FED26700F67C4A /* Resources */,
+				2D4EDCF024FF00F100F67C4A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = BluetoothTest;
+			packageProductDependencies = (
+				2DBAF79A257B03FA002950C1 /* DanaviBluetoothManager */,
+			);
 			productName = BluetoothTest;
 			productReference = 2D4EDC9D24FED26700F67C4A /* BluetoothTest.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +242,9 @@
 				Base,
 			);
 			mainGroup = 2D4EDC9424FED26700F67C4A;
+			packageReferences = (
+				2DBAF799257B03FA002950C1 /* XCRemoteSwiftPackageReference "DanaviBluetoothManager" */,
+			);
 			productRefGroup = 2D4EDC9E24FED26700F67C4A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -439,6 +469,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BB5FJ954QV;
 				INFOPLIST_FILE = BluetoothTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_DYLIB_INSTALL_NAME = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,6 +490,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BB5FJ954QV;
 				INFOPLIST_FILE = BluetoothTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_DYLIB_INSTALL_NAME = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -477,7 +511,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BB5FJ954QV;
 				INFOPLIST_FILE = BluetoothTestTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -499,7 +533,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BB5FJ954QV;
 				INFOPLIST_FILE = BluetoothTestTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -520,6 +554,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BB5FJ954QV;
 				INFOPLIST_FILE = BluetoothTestUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -540,6 +575,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BB5FJ954QV;
 				INFOPLIST_FILE = BluetoothTestUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -593,6 +629,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2DBAF799257B03FA002950C1 /* XCRemoteSwiftPackageReference "DanaviBluetoothManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dialisa-dev/DanaviBluetoothManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2DBAF79A257B03FA002950C1 /* DanaviBluetoothManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DBAF799257B03FA002950C1 /* XCRemoteSwiftPackageReference "DanaviBluetoothManager" */;
+			productName = DanaviBluetoothManager;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2D4EDC9524FED26700F67C4A /* Project object */;
 }

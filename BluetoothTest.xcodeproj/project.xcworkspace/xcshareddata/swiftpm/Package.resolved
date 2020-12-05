@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "DanaviBluetoothManager",
+        "repositoryURL": "https://github.com/dialisa-dev/DanaviBluetoothManager.git",
+        "state": {
+          "branch": null,
+          "revision": "ab0e59e4a5602ad2077e9e7a3dc723541f25efed",
+          "version": "0.3.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
